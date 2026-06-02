@@ -4,7 +4,7 @@
     --secondary-color: #f4a261;
     /* warm sand */
     --accent1-color: #264653;
-    /*dark slate blue */
+    /* dark slate blue */
     --accent2-color: #e9c46a;
     /* light golden yellow */
     --heading-font: "Time New Roman", "Georgia", serif;
@@ -18,7 +18,7 @@ header {
 
 nav a:hover {
     background-color: var(--secondary-color);
-    color: var(--accent1-color);
+    color-scheme: var(--accent1-color);
 }
 
 * {
