@@ -145,7 +145,7 @@ h1 {
     grid-template-columns: 1fr 200px 1fr;
     gap: 30px;
     align-items: center;
-    margin: 40 auto;
+    margin: 40 0 auto;
     max-width: 1000px;
     padding: 0;
 }
