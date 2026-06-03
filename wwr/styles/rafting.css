@@ -31,6 +31,14 @@ nav a {
     font-weight: bold;
 }
 
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
 nav a:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -117,6 +125,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     gap: 15px;
+    margin: 20px 0;
 }
 
 .adventures-container figure {
@@ -133,10 +142,10 @@ h1 {
 
 .history-container {
     display: grid;
-    grid-template-columns: 1fr 300px 1fr;
-    gap: 15px;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 30px;
     align-items: center;
-    margin: 0 auto;
+    margin: 40 auto;
     max-width: 1000px;
     padding: 0;
 }
@@ -147,4 +156,11 @@ h1 {
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    padding: 20px;
 }
