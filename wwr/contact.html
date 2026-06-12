@@ -26,78 +26,85 @@
         </nav>
     </header>
 
-    <section class="company-info">
-        <h1>White Water Rafting Company</h1>
-        <p>Lagos Island</p>
-        <p>Lagos, Nigeria</p>
-        <p>+2349117518905</p>
-        <p>info@whitewater.com</p>
-    </section>
+    <main>
+        <section class="company-info">
+            <h1>White Water Rafting Company</h1>
+            <p>Lagos Island</p>
+            <p>Lagos, Nigeria</p>
+            <p>+2349117518905</p>
+            <p>info@whitewater.com</p>
+        </section>
 
-    <section class="contact-split-container">
-        <!--left side: Map Box-->
-        <div class="map-column">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6034.167093639187!2d-75.80193836827293!3d40.87004068778569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1781275332189!5m2!1sen!2sng"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="map-pin"></div>
-        </div>
+        <section class="contact-split-container">
+            <div class="map-column">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6034.167093639187!2d-75.80193836827293!3d40.87004068778569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1781275332189!5m2!1sen!2sng"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="map-pin"></div>
+            </div>
 
-        <!--Right Side: Form-Column-->
-        <div class="form-column">
-            <form action="#" class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Your Name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Your Email">
-                </div>
-                <div class="form-group radio-group">
-                    <label>Message Purpose</label>
-                    <div class="radio-options">
-                        <label><input type="radio" name="purpose" checked> General Inquiry</label>
-                        <label><input type="radio" name="purpose"> Reservation Question</label>
-                        <label><input type="radio" name="purpose"> Website Suggestion</label>
+            <div class="form-column">
+                <form action="#" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="user-name" placeholder="Your Name">
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" rows="4" placeholder="Type here"></textarea>
-                </div>
-                <div class="form-group checkbox-group">
-                    <label><input type="checkbox" checked> Please Subscribe me to the monthly
-                        newsletter</label>
-                </div>
-                <button type="submit" class="submit-btn">Get in Touch!</button>
-            </form>
-        </div>
-    </section>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="user-email" placeholder="Your Email">
+                    </div>
 
-    <section class="employee-section">
-        <h2>We Are Here to Serve You</h2>
-        <div class="employee-grid">
-            <div class="profile-card">
-                <img src="images/profile1 (1).png" alt="Profile Icon" width="50">
-                <p>Employee profile</p>
+                    <div class="form-group radio-group">
+                        <label>Message Purpose</label>
+                        <div class="radio-options">
+                            <label for="general"><input type="radio" id="general" name="purpose"
+                                  value="general" checked> General Inquiry</label>
+                            <label for="reservation"><input type="radio" id="reservation"
+                                  name="purpose" value="reservation"> Reservation Question</label>
+                            <label for="suggestion"><input type="radio" id="suggestion"
+                                  name="purpose" value="suggestion"> Website Suggestion</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="user-message" rows="4"
+                          placeholder="Type here"></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label for="subscribe"><input type="checkbox" id="subscribe"
+                              name="subscribe" checked> Please Subscribe me to the monthly
+                            newsletter</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Get in Touch!</button>
+                </form>
             </div>
-            <div class="profile-card">
-                <img src="images/profile1 (2).png" alt="Profile Icon" width="50">
-                <p>Employee profile</p>
+        </section>
+
+        <section class="employee-section">
+            <h2>We Are Here to Serve You</h2>
+            <div class="employee-grid">
+                <div class="profile-card">
+                    <img src="images/profile1.png" alt="Profile Icon" width="50">
+                    <p>Employee profile</p>
+                </div>
+                <div class="profile-card">
+                    <img src="images/profile2.png" alt="Profile Icon" width="50">
+                    <p>Employee profile</p>
+                </div>
+                <div class="profile-card">
+                    <img src="images/profile3.png" alt="Profile Icon" width="50">
+                    <p>Employee profile</p>
+                </div>
             </div>
-            <div class="profile-card">
-                <img src="images/profile1 (3).png" alt="Profile Icon" width="50">
-                <p>Employee profile</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer class="footer">
-        <p>&copy;2026 Sunday Isaac Udoh</p>
-        <div class="footer-text"></div>
-        <div class="social-icons">
+        <p>&copy;2026 White Water Rafting Company - Sunday Isaac Udoh</p>
+        <nav class="socialmedia">
             <a href="https://whatsapp.com">
                 <img src="images/whatsapp.svg" alt="Whatsapp Icon" width="100">
             </a>
@@ -107,7 +114,7 @@
             <a href="https://linkedin.com">
                 <img src="images/linkedin.svg" alt="Linkedin Icon" width="100">
             </a>
-        </div>
+        </nav>
     </footer>
 </body>
 

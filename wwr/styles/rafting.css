@@ -195,24 +195,28 @@ nav a {
     margin-bottom: 10px;
 }
 
+/* UPDATED FOOTER ELEMENT TO CENTER ON THE PAGE */
 .footer {
     background-color: #d1c4e9;
     border: 1px solid #555;
     padding: 15px 30px;
     max-width: 1000px;
     margin: 0 auto;
+    /* Centers the entire block horizontally */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.social-icons {
+/* UPDATED CLASS SELECTOR FROM .social-icons TO MATCH NEW AUDIT-COMPLIANT HTML */
+.socialmedia {
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-.social-icons a {
+/* Formats the icon container anchors into crisp white square boxes */
+.socialmedia a {
     background-color: #ffffff;
     border: 1px solid #444;
     width: 35px;
@@ -223,12 +227,14 @@ nav a {
     text-decoration: none;
 }
 
-.social-icons a img {
+/* Controls the oversized width="100" attribute scaling issue on your SVGs */
+.socialmedia a img {
     width: 24px;
     height: 24px;
     object-fit: contain;
 }
 
+/* Media Query block to handle clean tablet and mobile viewport responses */
 @media (max-width: 768px) {
 
     .contact-split-container,
