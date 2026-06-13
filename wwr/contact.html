@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Us | White Water Rafting Company</title>
     <meta name="description"
-      content="Here we take you on a rafting thrilling trip made for family and fun seekers.">
+      content="Get in touch with White Water Rafting Company. Contact us for reservations, general inquiries, or trip information.">
     <meta name="author" content="Sunday Isaac Udoh">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -25,7 +25,6 @@
             </ul>
         </nav>
     </header>
-
     <main>
         <section class="company-info">
             <h1>White Water Rafting Company</h1>
@@ -34,17 +33,14 @@
             <p>+2349117518905</p>
             <p>info@whitewater.com</p>
         </section>
-
         <section class="contact-split-container">
             <div class="map-column">
-                <!-- REMOVED INLINE WIDTH, HEIGHT, AND STYLE ATTRIBUTES -->
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6034.167093639187!2d-75.80193836827293!3d40.87004068778569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1781275332189!5m2!1sen!2sng"
                   allowfullscreen="" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="map-pin"></div>
             </div>
-
             <div class="form-column">
                 <form action="#" class="contact-form">
                     <div class="form-group">
@@ -56,8 +52,8 @@
                         <input type="email" id="email" name="user-email" placeholder="Your Email">
                     </div>
 
-                    <div class="form-group radio-group">
-                        <label>Message Purpose</label>
+                    <fieldset class="form-group radio-group">
+                        <legend>Message Purpose</legend>
                         <div class="radio-options">
                             <label for="general"><input type="radio" id="general" name="purpose"
                                   value="general" checked> General Inquiry</label>
@@ -66,14 +62,13 @@
                             <label for="suggestion"><input type="radio" id="suggestion"
                                   name="purpose" value="suggestion"> Website Suggestion</label>
                         </div>
-                    </div>
+                    </fieldset>
 
                     <div class="form-group">
                         <label for="message">Message</label>
                         <textarea id="message" name="user-message" rows="4"
                           placeholder="Type here"></textarea>
                     </div>
-
                     <div class="form-group checkbox-group">
                         <label for="subscribe"><input type="checkbox" id="subscribe"
                               name="subscribe" checked> Please Subscribe me to the monthly
@@ -83,26 +78,25 @@
                 </form>
             </div>
         </section>
-
         <section class="employee-section">
             <h2>We Are Here to Serve You</h2>
             <div class="employee-grid">
-                <div class="profile-card">
-                    <img src="images/profile1.png" alt="Profile Icon" width="50">
-                    <p>Employee profile</p>
-                </div>
-                <div class="profile-card">
-                    <img src="images/profile2.png" alt="Profile Icon" width="50">
-                    <p>Employee profile</p>
-                </div>
-                <div class="profile-card">
-                    <img src="images/profile3.png" alt="Profile Icon" width="50">
-                    <p>Employee profile</p>
-                </div>
+                <figure class="profile-card">
+                    <img src="images/profile1.png" alt="Sunday Isaac Udoh - Managing Director"
+                      width="50">
+                    <figcaption>Sunday Isaac Udoh, Managing Director</figcaption>
+                </figure>
+                <figure class="profile-card">
+                    <img src="images/profile2.png" alt="Jane Doe - Lead Instructor" width="50">
+                    <figcaption>Jane Doe, Lead Instructor</figcaption>
+                </figure>
+                <figure class="profile-card">
+                    <img src="images/profile3.png" alt="Alex Smith - Safety Coordinator" width="50">
+                    <figcaption>Alex Smith, Safety Coordinator</figcaption>
+                </figure>
             </div>
         </section>
     </main>
-
     <footer class="footer">
         <p>&copy;2026 White Water Rafting Company - Sunday Isaac Udoh</p>
         <nav class="socialmedia">
