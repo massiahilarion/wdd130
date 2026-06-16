@@ -6,14 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | White Water Rafting Company</title>
     <meta name="description"
-      content="Get in touch with White Water Rafting Company. Contact us for reservations, general inquiries, or trip information.">
+      content="Get in touch with White Water Rafting Company. Contact us for inquiries, trip reservations, or support regarding your next rafting adventure.">
     <meta name="author" content="Sunday Isaac Udoh">
     <link rel="stylesheet" href="styles/rafting.css">
+    <style>
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <a href="#" class="logo-link">
+        <a href="index.html" class="logo-link">
             <img src="images/logo.png" alt="White Water Rafting" class="logo">
         </a>
         <nav>
@@ -21,10 +33,11 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <section class="company-info">
             <h1>White Water Rafting Company</h1>
@@ -33,7 +46,10 @@
             <p>+2349117518905</p>
             <p>info@whitewater.com</p>
         </section>
+
         <section class="contact-split-container">
+            <h2 class="visually-hidden">Contact Form and Location Map</h2>
+
             <div class="map-column">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6034.167093639187!2d-75.80193836827293!3d40.87004068778569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1781275332189!5m2!1sen!2sng"
@@ -41,19 +57,22 @@
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="map-pin"></div>
             </div>
+
             <div class="form-column">
                 <form action="#" class="contact-form">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="user-name" placeholder="Your Name">
+                        <input type="text" id="name" name="user-name" placeholder="Your Name"
+                          required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="user-email" placeholder="Your Email">
+                        <input type="email" id="email" name="user-email" placeholder="Your Email"
+                          required>
                     </div>
 
-                    <fieldset class="form-group radio-group">
-                        <legend>Message Purpose</legend>
+                    <div class="form-group radio-group">
+                        <label>Message Purpose</label>
                         <div class="radio-options">
                             <label for="general"><input type="radio" id="general" name="purpose"
                                   value="general" checked> General Inquiry</label>
@@ -62,13 +81,14 @@
                             <label for="suggestion"><input type="radio" id="suggestion"
                                   name="purpose" value="suggestion"> Website Suggestion</label>
                         </div>
-                    </fieldset>
+                    </div>
 
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="user-message" rows="4"
-                          placeholder="Type here"></textarea>
+                        <textarea id="message" name="user-message" rows="4" placeholder="Type here"
+                          required></textarea>
                     </div>
+
                     <div class="form-group checkbox-group">
                         <label for="subscribe"><input type="checkbox" id="subscribe"
                               name="subscribe" checked> Please Subscribe me to the monthly
@@ -78,6 +98,7 @@
                 </form>
             </div>
         </section>
+
         <section class="employee-section">
             <h2>We Are Here to Serve You</h2>
             <div class="employee-grid">
@@ -97,6 +118,7 @@
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <p>&copy;2026 White Water Rafting Company - Sunday Isaac Udoh</p>
         <nav class="socialmedia">

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Water Rafting - Choose Your Trip</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+    <style>
+        header {
+            position: relative;
+            background-color: var(--primary-purple);
+        }
+
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .trips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .trip-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .trip-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .trip-card-content {
+            padding: 20px;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+
+        .table-section {
+            margin: 50px 0;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin: 50px 0;
+            padding: 30px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src="images/logo.png" alt="White Water Rafting Logo" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="trips.html" class="active">Trips</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Our Adventures Activities</h1>
+
+        <section class="trips-grid">
+            <h2 class="visually-hidden">Available Tour Packages</h2>
+
+            <article class="trip-card">
+                <img src="images/river-imag.jpg"
+                  alt="Rafters splashing through big waves on Salmon River">
+                <div class="trip-card-content">
+                    <h2>Scenic River Cruises</h2>
+                    <p>Families and beginners looking for a scenic getaway.Drift through lush,
+                        forested canyons and splash through mild, beginner-friendly rapids. Unwind
+                        on
+                        pristine sandy beaches made for relaxing afternoon breaks.</p>
+                </div>
+            </article>
+
+            <article class="trip-card">
+                <img src="images/camping-image.jpg" alt="Rafts floating down a deep desert canyon">
+                <div class="trip-card-content">
+                    <h2>Desert Oasis Camping</h2>
+                    <p>Nature lovers seeking a multi-day wilderness immersion.Journey through
+                        breathtaking desert rock formations.
+                        Camp under the stars after conquering over 60
+                        mild-to-moderate, historic rapids along stunning scenic routes.</p>
+                </div>
+            </article>
+
+            <article class="trip-card">
+                <img src="images/rafting-image.jpg"
+                  alt="Advanced team maneuvering through narrow black rock rapid channel">
+                <div class="trip-card-content">
+                    <h2>Whitewater Thrills</h2>
+                    <p>Adrenaline junkies and experienced thrill-seekers.Tackle intense,
+                        fast-paced Class III and IV rapids. Navigate tight, high-stakes river bends
+                        carved
+                        deep into towering, ancient black rock walls.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="table-section">
+            <h2>Trip Summary & Pricing</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trip Name</th>
+                        <th>Duration</th>
+                        <th>Difficulty</th>
+                        <th>Price (Per Person)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Scenic River Cruises</td>
+                        <td>1 Day</td>
+                        <td>Class II-III (Easy)</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Desert Oasis Camping</td>
+                        <td>3 Days</td>
+                        <td>Class III (Moderate)</td>
+                        <td>$450</td>
+                    </tr>
+                    <tr>
+                        <td>Whitewater Thrills</td>
+                        <td>1 Day</td>
+                        <td>Class III-IV (Challenging)</td>
+                        <td>$220</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="cta-section">
+            <h2>Ready to Start Your Adventure?</h2>
+            <p>Spaces fill up quickly for the peak season. Contact us today to secure your raft!</p>
+            <a href="contact.html" class="btn">Book Your Trip Now</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - sunday Isaac Udoh</p>
+        <nav class="socialmedia">
+            <a href="https://whatsapp.com">
+                <img src="images/whatsapp.svg" alt="Whatsapp Icon" width="100">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram-square.svg" alt="Instagram Icon" width="100">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.svg" alt="Linkedin Icon" width="100">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
